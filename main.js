@@ -119,3 +119,77 @@
 // const appleOrangeJuice = fruitProcessor(2, 4);
 // console.log (appleOrangeJuice)
 
+//FUNCTION DECLARATION
+
+//you can even call the function first and then define it later
+
+// function calcAge1(birthYeah){
+//     return 2037 - birthYeah;
+// }
+//
+// const age1 = calcAge1(2000);
+// console.log(age1);
+
+// FUNCTION EXPRESSION or ANONYMOUS FUNCTION
+
+// const calcAge2 = function (birthYear) {
+//     return 2037 - birthYear;
+// }
+//
+// const age2 = calcAge2(2000);
+// console.log(age1, age2);
+
+
+// ES6 ARROW FUNCTION
+
+// return happens implicit without the word return
+
+// const calcAge3 = birthYear => 2037 - birthYear;
+// const age3 = calcAge3(2000)
+// console.log(age3)
+
+// const yearsUntilRetirement = (birthYear, firstName) => {
+//     const age = 2037 - birthYear;
+//     const retirement = 65 - age;
+//     // return retirement;
+//     return `${firstName} retires in ${retirement} years`;
+// }
+//
+// yearsUntilRetirement(1991);
+// console.log(yearsUntilRetirement(2000, 'Ken'));
+// console.log(yearsUntilRetirement(1985, 'Tom'));
+
+//FUNCTION INSIDE OF OTHER FUNCTIONS
+
+// function cutFruitPieces(fruit) {
+//     return fruit * 4;
+// }
+//
+// function fruitProcessor(apples, oranges) {
+//     const applePieces = cutFruitPieces(apples);
+//     const orangePieces = cutFruitPieces(oranges);
+//     const juice = `Juice with ${applePieces} apples and ${orangePiecesFunF} oranges.`
+//     return juice;
+// }
+//
+// console.log(fruitProcessor(2,3));
+
+const calcAge = function(birthYear) {
+    return 2037 - birthYear;
+}
+
+const yearsUntilRetirement = function (birthYear, firstName) {
+    const age = calcAge(birthYear)
+    const retirement = 65 - age;
+    // return retirement;
+        if (retirement > 0) {
+            console.log(`${firstName} retires in ${retirement} years`);
+            return retirement;
+        } else {
+            console.log(`${firstName} has already retired`);
+            return -1;
+        }
+}
+
+console.log (yearsUntilRetirement(1991, 'Jonas'));
+console.log (yearsUntilRetirement(1950, 'Mike'));
