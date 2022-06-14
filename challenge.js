@@ -81,7 +81,7 @@
 // const totalsArray = [total1, total2, total3]
 // console.log(totalsArray)
 
-// CHALLANGE 3 OBJECTS ---
+// CHALLENGE 3 OBJECTS ---
 
 // const mark = {
 //     fullname: 'Mark Miller',

@@ -361,3 +361,9 @@
 // console.log(jonas.age())
 // console.log(`${jonas['firstName']} is a ${jonas.age} year old ${jonas['job']} and he ${jonas.hasDriversLicense ? 'has' : 'does not have'} a drivers license` )
 
+
+// THE FOR LOOP ---
+
+for(let i = 0; i <= 10; i++){
+    console.log(`Number ${i}`)
+}
