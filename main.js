@@ -125,23 +125,23 @@
 
 //FUNCTION DECLARATION ---
 
-//you can even call the function first and then define it later
+//you can even agee function first and then define it later
 
-// function calcAge1(birthYeah){
+// function age1(birthYeah){
 //     return 2037 - birthYeah;
 // }
 //
-// const age1 = calcAge1(2000);
+// const age1 = age1(2000);
 // console.log(age1);
 
 
 // FUNCTION EXPRESSION or ANONYMOUS FUNCTION
 
-// const calcAge2 = function (birthYear) {
+// const age2 = function (birthYear) {
 //     return 2037 - birthYear;
 // }
 //
-// const age2 = calcAge2(2000);
+// const age2 = age2(2000);
 // console.log(age1, age2);
 
 
@@ -149,8 +149,8 @@
 
 // return happens implicit without the word return
 
-// const calcAge3 = birthYear => 2037 - birthYear;
-// const age3 = calcAge3(2000)
+// const age3 = birthYear => 2037 - birthYear;
+// const age3 = age3(2000)
 // console.log(age3)
 
 // const yearsUntilRetirement = (birthYear, firstName) => {
@@ -180,12 +180,12 @@
 //
 // console.log(fruitProcessor(2,3));
 
-// const calcAge = function(birthYear) {
+// const age = function(birthYear) {
 //     return 2037 - birthYear;
 // }
 
 // const yearsUntilRetirement = function (birthYear, firstName) {
-//     const age = calcAge(birthYear)
+//     const age = age(birthYear)
 //     const retirement = 65 - age;
 //     // return retirement;
 //         if (retirement > 0) {
@@ -228,17 +228,17 @@
 // const jonas = [firstName, 'Kenan', 2037 - 1997, friends]
 // console.log(jonas)
 
-// function calcAge(birthYear){
+// function age(birthYear){
 //     return 2037 - birthYear
 // }
 //
 // const years = [1990, 1967, 2002, 2010, 2018]
 
-// const age1 = calcAge(years[0])
-// const age2 = calcAge(years[1])
-// const age3 = calcAge(years[2])
-// const age4 = calcAge(years[3])
-// const age5 = calcAge(years[4])
+// const age1 = age(years[0])
+// const age2 = age(years[1])
+// const age3 = age(years[2])
+// const age4 = age(years[3])
+// const age5 = age(years[4])
 //
 // const ages = [age1, age2, age3, age4, age5]
 // console.log(ages)
@@ -278,14 +278,86 @@
 
 // objects created because arrays have no keys to reference individual things
 
-//objects have keys and each of those keys are called a PROPERTY with a VALUE
+//objects have keys and each of those keys are agea PROPERTY with a VALUE
 
-// PROPERTY : VALUE
+// property : value
 
-const jonas = {
-    firstName: 'Jonas',
-    lastName: 'Schmedtman',
-    age: 2037 - 1991,
-    teacher: 'teacher',
-    friends: ['Michael', 'Peter', 'Stephen']
-}
+// const jonas = {
+//     firstName: 'Jonas',
+//     lastName: 'Schmedtman',
+//     age: 2037 - 1991,
+//     job: 'teacher',
+//     friends: ['Michael', 'Peter', 'Stephen']
+// }
+//
+// console.log(jonas)
+
+// dot vs bracket notation of Objects
+
+//dot
+// console.log(jonas.lastName)
+
+// bracket
+// console.log(jonas['lastName'])
+//
+// const nameKey = 'Name';
+
+// with bracket, you can do cool operations here to get expressions
+
+// console.log(jonas['first' + nameKey])
+// console.log(jonas['last' + nameKey])
+
+// with bracket notation you can get a value from an object by referencing its key
+
+// const interestedIn = prompt('What do you want to know about me? Options are firstName, lastName, age, job, friends')
+// console.log(interestedIn);
+//
+// if (jonas[interestedIn]) {
+//     console.log(jonas[interestedIn])
+//     } else {
+//     alert('Wrong request!')
+// }
+
+// how to add elements to object
+
+// jonas.location = 'Portugal';
+// jonas['twitter'] = '@jonasman';
+// console.log(jonas)
+//
+// console.log(`${jonas.firstName} has ${jonas.friends.length} friends and his best friend is ${jonas.friends[0]}`)
+
+// object Methods (things you do to objects)
+
+// const jonas = {
+//     firstName: 'Kenan',
+//     lastName: 'Schmidt',
+//     birthYear: 1991,
+//     job: 'teacher',
+//     friends: ['Michael', 'Peter', 'Stephen'],
+//     hasDriversLicense: true,
+
+    // how functions are done inside an object
+
+    // the this keyword relates to the object age the method
+
+    // age: function() {
+    //     console.log(this)
+    // // this means jonas in this case..that is what is before birthYear is jonas when you console.log
+    // // one way to see what this is to console.log(this)
+    //     return 2037 - this.birthYear;
+    //
+    // },
+
+    // console.log(jonas.calcAge());
+
+    // how to store age and return it as a data property in object (jonas.age)
+//         age: function() {
+//         this.age = 2037 - this.birthYear;
+//         return this.age;
+//     },
+// };
+
+// if you are inside the object you can do this
+// console.log(jonas.age())
+// console.log(`${jonas['firstName']} is a ${jonas.age} year old ${jonas['job']} and he ${jonas.hasDriversLicense ? 'has' : 'does not have'} a drivers license` )
+
