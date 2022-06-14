@@ -1,4 +1,4 @@
-// Challenge 1 RESTAURANT BILL
+// Challenge 0 RESTAURANT BILL
 //
 // let billOne = 275;
 // let tip = billOne <= 300 && billOne >= 50 ? billOne * .15 : billOne *.2
@@ -9,7 +9,7 @@
 // let billTwo = 40;
 // let BillThree = 430;
 
-// Challenge 2 - Averages
+// Challenge 1 - Averages
 //
 // function calcAverage(scoreOne, scoreTwo, scoreThree, teamName) {
 //     let averageValue = (scoreOne + scoreTwo + scoreThree) / 3;
@@ -40,4 +40,44 @@
 //
 // checkWinner(averageDolphins, averageKoalas)
 // checkWinner(averageKoalas2, averageDolphins2)
+
+// // CHALLENGE 2 ARRAYS
+//
+//
+// function calcTip(bill){
+//     if (bill <= 300) {
+//         return bill * .15;
+//     } else {
+//         return bill * .2;
+//     }
+// }
+// console.log(calcTip(100));
+//
+// const theBills = [125, 555, 44]
+//
+// const tip1 = calcTip(theBills[0]);
+// const tip2 = calcTip(theBills[1]);
+// const tip3 = calcTip(theBills[2]);
+//
+// const tipsArray = [tip1,tip2,tip3];
+// console.log(tipsArray)
+//
+// // totals
+//
+// function calcTotal(bill){
+//     if (bill <= 300) {
+//         return bill * 1.15;
+//     } else {
+//         return bill * 1.2;
+//     }
+// }
+//
+// console.log(calcTotal(100));
+//
+// const total1 = calcTotal(theBills[0])
+// const total2 = calcTotal(theBills[1])
+// const total3 = calcTotal(theBills[2])
+//
+// const totalsArray = [total1, total2, total3]
+// console.log(totalsArray)
 

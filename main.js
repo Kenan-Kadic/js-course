@@ -246,20 +246,46 @@
 // BASIC FUNCTIONS THAT WORK ON ARRAYS ARE CALLED METHODS
 // METHODS ARE OPERATIONS THAT RUN ON ARRAYS
 
-const friends = ['Kenan', 'Tom', 'Michael']
+// const friends = ['Kenan', 'Tom', 'Michael']
 
 // add something at end of array
-friends.push('Jay');
+// friends.push('Jay');
 
 // add something at beginning of array
-friends.unshift('Amara')
-console.log(friends)
+// friends.unshift('Amara')
+// console.log(friends)
 
 // remove last element from array
-friends.pop();
-console.log(friends)
+// friends.pop();
+// console.log(friends)
 
 //you can store last removed element
-const popped = friends.pop();
-console.log(popped);
-// remove
+// const popped = friends.pop();
+// console.log(popped);
+
+// remove first element from array
+// friends.shift();
+
+// you can find stuff by index search
+// console.log(friends.indexOf('Kenan'))
+
+// you can check if array includes something (true or false)
+// includes checks if same type as well
+// console.log(friends.includes('Kenan'))
+
+
+// OBJECTS ---
+
+// objects created because arrays have no keys to reference individual things
+
+//objects have keys and each of those keys are called a PROPERTY with a VALUE
+
+// PROPERTY : VALUE
+
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'Schmedtman',
+    age: 2037 - 1991,
+    teacher: 'teacher',
+    friends: ['Michael', 'Peter', 'Stephen']
+}
