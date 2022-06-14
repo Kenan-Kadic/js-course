@@ -113,3 +113,44 @@
 // } else if (mark.bmi < john.bmi) {
 //     console.log(`${john.fullname}'s BMI (${john.bmi}) is higher than ${mark.fullname}'s BMI (${mark.bmi})`)
 // }
+
+// CHALLENGE 4 -- LOOPS
+
+// const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52]
+// const tips = [];
+// const totals = [];
+//
+// function calcTip(bill) {
+//     if (bill <= 300) {
+//         return bill * .15;
+//     } else {
+//         return bill * .2;
+//     }
+// }
+//
+// function calcTotal(bill) {
+//     if (bill <= 300) {
+//         return bill * 1.15;
+//     } else {
+//         return bill * 1.2;
+//     }
+// }
+//
+// for(let i = 0; i < bills.length; i++){
+//     const tip = calcTip(bills[i]);
+//     tips.push(tip)
+//     totals.push(tip + bills[i]);
+// }
+// console.log(`the tips are ${tips}`)
+// console.log(`the totals are ${totals}`)
+//
+// const calcAverage = function(arr) {
+//     let sum = 0;
+//     for(let i = 0; i < arr.length; i++) {
+//         sum = sum + arr[i];
+//     }
+//     return sum/arr.length
+// }
+// console.log(calcAverage([2,3,6]));
+// console.log(calcAverage(totals));
+// console.log(calcAverage(tips));

@@ -364,6 +364,92 @@
 
 // THE FOR LOOP ---
 
-for(let i = 0; i <= 10; i++){
-    console.log(`Number ${i}`)
-}
+// for(let i = 0; i <= 10; i++){
+//     console.log(`Number ${i}`)
+// }
+
+// loop through arrays
+
+// const jonasArray = [
+//     'Jonas',
+//     'Schmedtmann',
+//     2037 - 1991,
+//     'teacher',
+//     ['Michael', 'Peter', 'Stephen']
+// ]
+// const types = []
+
+// for (let i = 0; i < jonasArray.length; i++) {
+//     console.log(jonasArray[i], typeof jonasArray[i]);
+//
+//     types.push(typeof jonasArray[i]);
+// }
+// console.log(types)
+//
+// const years = [1991, 2007, 1969, 2020];
+// const ages = [];
+//
+// for(let i = 0; i < years.length; i++){
+//     ages.push(2037 - years[i]);
+// }
+// console.log(ages)
+
+// continue and break
+// continue will continue past current iteration of loop (skip) and goes to next one
+
+// for(let i = 0; i < jonasArray.length; i++) {
+//     if (typeof jonasArray[i] !== 'string') continue;
+// }
+
+// break is just to exit right there where you are
+
+// for(let i = 0; i < jonasArray.length; i++) {
+//     if (typeof jonasArray[i] !== 'string') break;
+// }
+
+// LOOPING BACKWARDS ---
+
+// const jonasArray = [
+//     'Jonas',
+//     'Schmedtmann',
+//     2037 - 1991,
+//     'teacher',
+//     ['Michael', 'Peter', 'Stephen']
+// ]
+//
+// for(let i = jonasArray.length-1; i >= 0; i--){
+//     console.log(jonasArray[i]);
+// }
+
+// LOOPS INSIDE OF LOOPS ---
+
+// for(let exercise = 1; exercise < 4; exercise++) {
+//     console.log(`-------Starting exercise ${exercise}`);
+//
+//     for(let rep = 1; rep < 6; rep++){
+//     console.log(`Exercise ${exercise} : Lifting weight repetition ${rep}`)
+//     }
+// }
+
+// THE WHILE LOOP
+
+// the while loop can be used in a large number of situations
+// it is not always tied to just a counter
+
+// let rep = 1;
+// while(rep <= 10){
+//     console.log(`Lifting weights repetition ${rep}`)
+//     rep++;
+// }
+
+// RANDOM NUMBER GENERATOR
+
+// let dice = Math.trunc(Math.random() * 6) + 1
+//
+// while(dice !== 6) {
+//     console.log(`you rolled a ${dice}`)
+//     dice = Math.trunc(Math.random() * 6) + 1
+//     if (dice === 6){
+//         console.log('You rolled a 6 now and loop closed')
+//     }
+// }
