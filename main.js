@@ -1,3 +1,5 @@
+// SWITCH CASE
+
 // const massOfMark = 95;
 // const heightOfMark = 1.88;
 // const massOfJohn = 85;
@@ -65,7 +67,7 @@
 //
 //
 
-// Ternary Operators
+// TERNARY OPERATORS ---
 
 // const age = 13;
 // let theDrink = age >= 18 ? console.log('I love to drink wine') : console.log('I am too young')
@@ -81,7 +83,8 @@
 //
 // console.log(`I like to drink ${age >= 18 ? 'wine' : 'water'}`)
 
-// // STRICT MODE
+
+// // STRICT MODE ---
 
 // 'use strict';
 //
@@ -94,7 +97,7 @@
 // const interface = 'Audio'
 
 
-// FUNCTIONS
+// FUNCTIONS ---
 
 // function logger() {
 //     console.log('My name is Kenan')
@@ -119,7 +122,8 @@
 // const appleOrangeJuice = fruitProcessor(2, 4);
 // console.log (appleOrangeJuice)
 
-//FUNCTION DECLARATION
+
+//FUNCTION DECLARATION ---
 
 //you can even call the function first and then define it later
 
@@ -129,6 +133,7 @@
 //
 // const age1 = calcAge1(2000);
 // console.log(age1);
+
 
 // FUNCTION EXPRESSION or ANONYMOUS FUNCTION
 
@@ -140,7 +145,7 @@
 // console.log(age1, age2);
 
 
-// ES6 ARROW FUNCTION
+// ES6 ARROW FUNCTION ---
 
 // return happens implicit without the word return
 
@@ -159,7 +164,8 @@
 // console.log(yearsUntilRetirement(2000, 'Ken'));
 // console.log(yearsUntilRetirement(1985, 'Tom'));
 
-//FUNCTION INSIDE OF OTHER FUNCTIONS
+
+//FUNCTION INSIDE OF OTHER FUNCTIONS ---
 
 // function cutFruitPieces(fruit) {
 //     return fruit * 4;
@@ -174,9 +180,9 @@
 //
 // console.log(fruitProcessor(2,3));
 
-const calcAge = function(birthYear) {
-    return 2037 - birthYear;
-}
+// const calcAge = function(birthYear) {
+//     return 2037 - birthYear;
+// }
 
 // const yearsUntilRetirement = function (birthYear, firstName) {
 //     const age = calcAge(birthYear)
@@ -193,3 +199,67 @@ const calcAge = function(birthYear) {
 //
 // console.log (yearsUntilRetirement(1991, 'Jonas'));
 // console.log (yearsUntilRetirement(1950, 'Mike'));
+
+
+// ARRAYS ---
+
+//a big container into which you can throw variables and later reference them
+
+// const friends = ['Michael', 'Stephen', 'Peter'];
+// console.log(friends)
+
+//a function based way to write array
+// const years = new Array(1991,1984, 2018, 2020);
+
+// console.log(friends[0])
+// console.log(friends.length)
+// // last item in array
+// console.log(friends.length - 1);
+
+// change value in array
+// friends[2] = 'Jay'
+// console.log(friends)
+
+// only primitive values are immutable but array is not primitive value
+
+//you can put an array inside an array
+
+// const firstName = 'Jonas';
+// const jonas = [firstName, 'Kenan', 2037 - 1997, friends]
+// console.log(jonas)
+
+// function calcAge(birthYear){
+//     return 2037 - birthYear
+// }
+//
+// const years = [1990, 1967, 2002, 2010, 2018]
+
+// const age1 = calcAge(years[0])
+// const age2 = calcAge(years[1])
+// const age3 = calcAge(years[2])
+// const age4 = calcAge(years[3])
+// const age5 = calcAge(years[4])
+//
+// const ages = [age1, age2, age3, age4, age5]
+// console.log(ages)
+
+// BASIC FUNCTIONS THAT WORK ON ARRAYS ARE CALLED METHODS
+// METHODS ARE OPERATIONS THAT RUN ON ARRAYS
+
+const friends = ['Kenan', 'Tom', 'Michael']
+
+// add something at end of array
+friends.push('Jay');
+
+// add something at beginning of array
+friends.unshift('Amara')
+console.log(friends)
+
+// remove last element from array
+friends.pop();
+console.log(friends)
+
+//you can store last removed element
+const popped = friends.pop();
+console.log(popped);
+// remove
